@@ -22,7 +22,7 @@ socket.on('connect', function() {
     })
 });
 
-// escuchar
+
 socket.on('disconnect', function() {
 
     console.log('Perdimos conexión con el servidor');
@@ -30,15 +30,6 @@ socket.on('disconnect', function() {
 });
 
 
-// Enviar información
-// socket.emit('crearMensaje', {
-//     usuario: 'Fernando',
-//     mensaje: 'Hola Mundo'
-// }, function(resp) {
-//     console.log('respuesta server: ', resp);
-// });
-
-// Escuchar información
 socket.on('crearMensaje', function(mensaje) {
 
     console.log('Servidor:', mensaje);
